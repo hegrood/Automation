@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation Practice]">
+  <test name="Automation Practice App Test Cases">
+    <classes>
+      <class name="com.ap.ui.testcases.LoginTest"/>
+      <class name="com.ap.ui.testcases.ContactTest"/>
+      <class name="com.ap.ui.testcases.SearchItemTest"/>
+    </classes>
+  </test> <!-- Automation Practice App Test Cases -->
+  <test name="Automation Practice App Test Cases(failed)">
+    <classes>
+      <class name="com.ap.ui.testcases.SearchItemTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpDriver"/>
+          <include name="testSearchItem"/>
+        </methods>
+      </class> <!-- com.ap.ui.testcases.SearchItemTest -->
+      <class name="com.ap.ui.testcases.ContactTest">
+        <methods>
+          <include name="closeBowser"/>
+          <include name="setUpDriver"/>
+          <include name="testContact"/>
+        </methods>
+      </class> <!-- com.ap.ui.testcases.ContactTest -->
+      <class name="com.ap.ui.testcases.LoginTest">
+        <methods>
+          <include name="closeBowser"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- com.ap.ui.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Automation Practice App Test Cases(failed) -->
+</suite> <!-- Failed suite [Automation Practice] -->
